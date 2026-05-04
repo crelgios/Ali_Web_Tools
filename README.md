@@ -1,27 +1,43 @@
-# PDF Tools - Tier 1, Tier 2, Tier 3 Languages + Hreflang
+# PDF Tools Final Global SEO Version
 
-Includes 22 language routes:
-Tier 1: English, Chinese Simplified, Spanish, Hindi, Arabic, Portuguese
-Tier 2: French, German, Japanese, Russian, Indonesian, Turkish
-Tier 3: Korean, Italian, Dutch, Polish, Thai, Vietnamese, Bengali, Urdu, Persian, Malay
+## Included
+- JPG to PDF
+- PNG to PDF
+- Merge PDF
+- Browser-based processing
+- No file storage
+- Tier 1, Tier 2 and Tier 3 languages
+- Hreflang generated automatically for every tool page
+- Auto language detection on homepage
+- Better homepage UI
+- Drag and drop upload for image tools
+- RTL support for Arabic, Urdu and Persian
+- Sitemap and robots
 
-Each tool page includes hreflang alternates for every language route.
+## Languages
+English, Chinese Simplified, Spanish, Hindi, Arabic, Portuguese, French, German, Japanese, Russian, Indonesian, Turkish, Korean, Italian, Dutch, Polish, Thai, Vietnamese, Bengali, Urdu, Persian, Malay.
 
-## Run
+## Run locally
 ```bash
 npm install
 npm run dev
 ```
 
-## Deploy
-Upload to GitHub, then import to Vercel.
+## Deploy on Vercel
+1. Upload this folder to GitHub
+2. Import project in Vercel
+3. Click Deploy
 
-## Before launch
+## Before final launch
 Replace `https://your-domain.com` in:
-- app/sitemap.js
-- app/robots.js
+- `app/sitemap.js`
+- `app/robots.js`
 
 Update contact email:
-- app/contact/page.js
+- `app/contact/page.js`
 
-Important: Some Tier 2/Tier 3 texts use simple starter translations. Improve them later for better SEO quality.
+## Check hreflang
+After deploy:
+1. Open a tool page
+2. Right click → View Page Source
+3. Search: `hreflang`
