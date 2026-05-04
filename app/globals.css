@@ -7,10 +7,7 @@ body {
   color: #111827;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+a { color: inherit; text-decoration: none; }
 
 .container {
   max-width: 1050px;
@@ -36,10 +33,7 @@ a {
   align-items: center;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: 800;
-}
+.logo { font-size: 22px; font-weight: 800; }
 
 .links {
   display: flex;
@@ -49,9 +43,7 @@ a {
   align-items: center;
 }
 
-.links a {
-  font-weight: 600;
-}
+.links a { font-weight: 600; }
 
 .lang-select {
   padding: 8px 12px;
@@ -91,9 +83,7 @@ a {
   border: 1px solid #eef2f7;
 }
 
-.card h2 {
-  margin-top: 0;
-}
+.card h2 { margin-top: 0; }
 
 .btn {
   display: inline-block;
@@ -107,10 +97,7 @@ a {
   margin-top: 12px;
 }
 
-.btn:disabled {
-  opacity: .5;
-  cursor: not-allowed;
-}
+.btn:disabled { opacity: .5; cursor: not-allowed; }
 
 .upload {
   border: 2px dashed #cbd5e1;
@@ -120,9 +107,7 @@ a {
   text-align: center;
 }
 
-input[type="file"] {
-  margin: 14px 0;
-}
+input[type="file"] { margin: 14px 0; }
 
 .note {
   background: #ecfeff;
@@ -145,8 +130,5 @@ input[type="file"] {
     align-items: flex-start;
     flex-direction: column;
   }
-
-  .hero h1 {
-    font-size: 32px;
-  }
+  .hero h1 { font-size: 32px; }
 }

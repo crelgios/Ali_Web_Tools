@@ -3,6 +3,9 @@ export default function sitemap() {
 
   const routes = [
     "",
+    "/en",
+    "/hi",
+    "/es",
     "/en/jpg-to-pdf",
     "/en/png-to-pdf",
     "/en/merge-pdf",

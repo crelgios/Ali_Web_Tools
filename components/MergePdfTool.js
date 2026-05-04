@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import { PDFDocument } from "pdf-lib";
+import { getText } from "../lib/translations";
 
 export default function MergePdfTool({ language = "en" }) {
   const [files, setFiles] = useState([]);
+  const t = getText(language);
 
   function handleFiles(e) {
     setFiles(Array.from(e.target.files || []));
@@ -44,48 +46,22 @@ export default function MergePdfTool({ language = "en" }) {
     setFiles([]);
   }
 
-  const text = {
-    en: {
-      title: "Merge PDF",
-      sub: "Combine multiple PDF files into one PDF.",
-      empty: "No files selected",
-      button: "Merge PDF",
-      privacy: "Your PDF files are processed in your browser and are not stored."
-    },
-    hi: {
-      title: "PDF मिलाएं",
-      sub: "कई PDF फाइलों को एक PDF में मिलाएं।",
-      empty: "कोई फाइल चुनी नहीं गई",
-      button: "PDF मिलाएं",
-      privacy: "आपकी PDF फाइलें आपके ब्राउज़र में ही प्रोसेस होती हैं।"
-    },
-    es: {
-      title: "Unir PDF",
-      sub: "Combina varios archivos PDF en un solo PDF.",
-      empty: "No hay archivos seleccionados",
-      button: "Unir PDF",
-      privacy: "Tus archivos PDF se procesan en tu navegador y no se guardan."
-    }
-  };
-
-  const t = text[language] || text.en;
-
   return (
     <main className="container">
       <section className="hero">
-        <h1>{t.title}</h1>
-        <p>{t.sub}</p>
+        <h1>{t.merge}</h1>
+        <p>{t.mergeSub}</p>
       </section>
 
       <div className="upload">
         <input type="file" accept="application/pdf" multiple onChange={handleFiles} />
-        <p>{files.length ? `${files.length} file(s) selected` : t.empty}</p>
+        <p>{files.length ? `${files.length} file(s) selected` : t.noFiles}</p>
         <button className="btn" onClick={mergePDFs} disabled={!files.length}>
-          {t.button}
+          {t.mergeBtn}
         </button>
       </div>
 
-      <div className="note">{t.privacy}</div>
+      <div className="note">{t.privacyPdf}</div>
     </main>
   );
 }

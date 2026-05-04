@@ -1,14 +1,13 @@
-# PDF Tools Vercel Starter
+# PDF Tools Vercel Full Language Version
 
-## Included
-- JPG to PDF
-- PNG to PDF
-- Merge PDF
-- English, Hindi, Spanish pages
-- Language switcher
-- SEO metadata
-- Sitemap and robots
-- Privacy, Terms, Contact pages
+## Fixed
+This version translates the full visible website:
+- Navbar
+- Footer
+- Homepage
+- Tool cards
+- Tool page title/description/buttons/notes
+- English, Hindi and Spanish routes
 
 ## Run locally
 ```bash
@@ -17,14 +16,14 @@ npm run dev
 ```
 
 ## Deploy
-1. Upload this project to GitHub
-2. Import it on Vercel
+1. Upload this folder to GitHub
+2. Import on Vercel
 3. Deploy
 
-## Change before final launch
+## Before final launch
 Update `https://your-domain.com` in:
 - `app/sitemap.js`
 - `app/robots.js`
 
-Also update the email in:
+Update contact email in:
 - `app/contact/page.js`

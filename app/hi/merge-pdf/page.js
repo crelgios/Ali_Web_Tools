@@ -1,3 +1,4 @@
+import SiteShell from "../../../components/SiteShell";
 import MergePdfTool from "../../../components/MergePdfTool";
 
 export const metadata = {
@@ -13,5 +14,9 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <MergePdfTool language="hi" />;
+  return (
+    <SiteShell lang="hi">
+      <MergePdfTool language="hi" />
+    </SiteShell>
+  );
 }

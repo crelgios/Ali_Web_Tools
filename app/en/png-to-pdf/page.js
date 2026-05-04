@@ -1,8 +1,9 @@
+import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
 
 export const metadata = {
-  title: "PNG to PDF Free Online | Secure PNG Converter",
-  description: "Convert PNG images to PDF online for free. Fast, private and easy to use.",
+  title: "PNG to PDF Free Online",
+  description: "Convert PNG images to PDF online for free.",
   alternates: {
     languages: {
       en: "/en/png-to-pdf",
@@ -13,5 +14,9 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ImageToPdfTool type="PNG" title="PNG to PDF" language="en" />;
+  return (
+    <SiteShell lang="en">
+      <ImageToPdfTool type="PNG" title="PNG to PDF" language="en" />
+    </SiteShell>
+  );
 }
