@@ -14,6 +14,7 @@ export default function SiteShell({ lang = "en", children }) {
             <a href={`/${lang}/jpg-to-pdf`}>{t.jpg}</a>
             <a href={`/${lang}/png-to-pdf`}>{t.png}</a>
             <a href={`/${lang}/merge-pdf`}>{t.merge}</a>
+            <a href="/en/blog">Blog</a>
             <LanguageSwitcher />
           </div>
         </div>
@@ -23,13 +24,13 @@ export default function SiteShell({ lang = "en", children }) {
       <div className="footer">
         <p>{t.footer}</p>
         <p className="footer-links">
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href={`/${lang}/privacy-policy`}>Privacy Policy</a>
           <span> · </span>
-          <a href="/terms">Terms</a>
+          <a href={`/${lang}/terms`}>Terms</a>
           <span> · </span>
-          <a href="/contact">Contact</a>
+          <a href={`/${lang}/contact`}>Contact</a>
           <span> · </span>
-          <a href="/faq">FAQ</a>
+          <a href={`/${lang}/faq`}>FAQ</a>
         </p>
       </div>
 

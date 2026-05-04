@@ -52,3 +52,28 @@ The contact page uses Formspree:
 
 Example:
 `https://formspree.io/f/abcdwxyz`
+
+
+## SEO blog posts added
+Added 5 English SEO blog posts:
+- /en/blog/jpg-to-pdf-without-software
+- /en/blog/convert-jpg-to-pdf-mobile
+- /en/blog/best-free-jpg-to-pdf-converter
+- /en/blog/merge-pdf-online-free
+- /en/blog/top-free-pdf-tools-online
+
+Blog index:
+- /en/blog
+
+Contact form uses your Formspree link:
+- https://formspree.io/f/xqenplzg
+
+
+## Multilingual trust pages added
+Privacy Policy, Terms, FAQ, and Contact now exist for every language route:
+- /en/privacy-policy, /hi/privacy-policy, /es/privacy-policy, etc.
+- /en/terms, /hi/terms, /es/terms, etc.
+- /en/faq, /hi/faq, /es/faq, etc.
+- /en/contact, /hi/contact, /es/contact, etc.
+
+Footer links now follow the selected language.

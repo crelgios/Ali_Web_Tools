@@ -97,3 +97,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.blog-post {
+  line-height: 1.75;
+  max-width: 850px;
+  margin: auto;
+}
+
+.blog-post h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.blog-post h2 {
+  margin-top: 28px;
+}
+
+.blog-post li {
+  margin: 8px 0;
+}

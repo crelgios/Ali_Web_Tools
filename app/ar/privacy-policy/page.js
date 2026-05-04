@@ -1,0 +1,30 @@
+import SiteShell from "../../../components/SiteShell";
+import { getTrustHreflang } from "../../../lib/trustTranslations";
+
+export const metadata = {
+  title: "سياسة الخصوصية | PDF Tools",
+  description: "خصوصيتك مهمة لنا. تتم معالجة الملفات في متصفحك كلما أمكن ولا نقوم بتخزين ملفاتك.",
+  alternates: {
+    canonical: "/ar/privacy-policy",
+    languages: getTrustHreflang("privacy-policy")
+  }
+};
+
+export default function Page() {
+  return (
+    <SiteShell lang="ar">
+      <main className="container">
+        <section className="hero">
+          <h1>سياسة الخصوصية</h1>
+          <p>خصوصيتك مهمة لنا. تتم معالجة الملفات في متصفحك كلما أمكن ولا نقوم بتخزين ملفاتك.</p>
+        </section>
+        <article className="card blog-post">
+          <p>صممنا أدوات PDF لتكون بسيطة ومفيدة وتحترم الخصوصية.</p>
+<p>في الأدوات المعتمدة على المتصفح، تتم معالجة ملفاتك على جهازك كلما أمكن.</p>
+<p>لا نقوم بتخزين الملفات المرفوعة بشكل دائم.</p>
+<p>قد نستخدم أدوات تحليل أو إعلانات أساسية مستقبلاً لتحسين الموقع ودعمه.</p>
+        </article>
+      </main>
+    </SiteShell>
+  );
+}
