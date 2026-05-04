@@ -1,21 +1,24 @@
 "use client";
-import { usePathname } from "next/navigation";
+
+import { usePathname, useRouter } from "next/navigation";
 import { languageOptions } from "../lib/translations";
 
 export default function LanguageSwitcher() {
+  const router = useRouter();
   const pathname = usePathname() || "/";
-  const parts = pathname.split("/").filter(Boolean);
   const codes = languageOptions.map((l) => l.code);
+  const parts = pathname.split("/").filter(Boolean);
   const hasLangPrefix = codes.includes(parts[0]);
-  const currentLang = hasLangPrefix ? parts[0] : "en";
-
-  // Keep the same page while changing language.
-  // Example: /en/faq -> /hi/faq and /faq -> /hi/faq
+  const currentLang = hasLangPrefix ? parts[0] : (typeof window !== "undefined" && localStorage.getItem("siteLang")) || "en";
   const currentPath = hasLangPrefix ? parts.slice(1).join("/") : parts.join("/");
 
   function changeLanguage(e) {
     const nextLang = e.target.value;
-    window.location.href = currentPath ? `/${nextLang}/${currentPath}` : `/${nextLang}`;
+    if (typeof window !== "undefined") {
+      localStorage.setItem("siteLang", nextLang);
+    }
+    const nextPath = currentPath ? `/${nextLang}/${currentPath}` : `/${nextLang}`;
+    router.push(nextPath);
   }
 
   return (

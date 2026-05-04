@@ -1,4 +1,10 @@
-import { redirect } from "next/navigation";
+import LocaleRedirect from "../../components/LocaleRedirect";
+
+export const metadata = {
+  title: "Terms of Service | PDF Tools",
+  description: "Read the PDF Tools terms of service."
+};
+
 export default function Page() {
-  redirect("/en/terms");
+  return <LocaleRedirect path="terms" />;
 }

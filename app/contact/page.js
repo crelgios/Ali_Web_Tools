@@ -1,4 +1,10 @@
-import { redirect } from "next/navigation";
+import LocaleRedirect from "../../components/LocaleRedirect";
+
+export const metadata = {
+  title: "Contact Us | PDF Tools",
+  description: "Contact PDF Tools for help or questions."
+};
+
 export default function Page() {
-  redirect("/en/contact");
+  return <LocaleRedirect path="contact" />;
 }

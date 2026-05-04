@@ -1,4 +1,10 @@
-import { redirect } from "next/navigation";
+import LocaleRedirect from "../../components/LocaleRedirect";
+
+export const metadata = {
+  title: "PDF Tools Blog | Guides and Tips",
+  description: "Helpful PDF guides about JPG to PDF, PNG to PDF, merge PDF and free online PDF tools."
+};
+
 export default function Page() {
-  redirect("/en/blog");
+  return <LocaleRedirect path="blog" />;
 }
