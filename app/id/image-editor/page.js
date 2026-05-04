@@ -1,20 +1,4 @@
 import SiteShell from "../../../components/SiteShell";
-import ImageEditorTool from "../../../components/ImageEditorTool";
-import { getHreflang } from "../../../lib/translations";
-
-export const metadata = {
-  title: "Editor Gambar - Free Online Tool",
-  description: "Pangkas, ubah ukuran, putar, balik, dan konversi gambar online. Your files stay private in your browser.",
-  alternates: {
-    canonical: "/id/image-editor",
-    languages: getHreflang("image-editor")
-  }
-};
-
-export default function Page() {
-  return (
-    <SiteShell lang="id">
-      <ImageEditorTool lang="id" />
-    </SiteShell>
-  );
-}
+import CropImageTool from "../../../components/CropImageTool";
+export const metadata={title:"Crop Image Online",description:"Crop images with rectangular selection privately in your browser."};
+export default function Page(){ return <SiteShell lang="id"><CropImageTool lang="id" /></SiteShell>; }

@@ -1,6 +1,6 @@
 import SiteShell from "../../../components/SiteShell";
-import ImageEditorTool from "../../../components/ImageEditorTool";
 import { getHreflang } from "../../../lib/translations";
+import CompressImageTool from "../../../components/CompressImageTool";
 
-export const metadata = { title: "Image Compressor", description: "Compress images online privately in your browser.", alternates: { canonical: "/ru/image-compressor", languages: getHreflang("image-compressor") } };
-export default function Page(){ return <SiteShell lang="ru"><ImageEditorTool lang="ru" /></SiteShell>; }
+export const metadata = { title: "Image Compressor Online", description: "Compress images privately in your browser.", alternates: { canonical: "/ru/image-compressor", languages: getHreflang("image-compressor") } };
+export default function Page(){ return <SiteShell lang="ru"><CompressImageTool lang="ru" /></SiteShell>; }

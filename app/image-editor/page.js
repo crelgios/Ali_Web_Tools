@@ -1,8 +1,4 @@
 import SiteShell from "../../components/SiteShell";
-import ImageEditorTool from "../../components/ImageEditorTool";
-
-export const metadata = { title: "Free Online Image Editor", description: "Crop, resize, rotate, flip and convert images online. Your files stay private in your browser." };
-
-export default function Page() {
-  return <SiteShell lang="en"><ImageEditorTool lang="en" /></SiteShell>;
-}
+import CropImageTool from "../../components/CropImageTool";
+export const metadata={title:"Crop Image Online",description:"Crop images with rectangular selection privately in your browser."};
+export default function Page(){ return <SiteShell lang="en"><CropImageTool lang="en" /></SiteShell>; }
