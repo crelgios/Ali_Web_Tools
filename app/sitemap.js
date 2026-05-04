@@ -92,7 +92,8 @@ export default function sitemap() {
   "/ms/merge-pdf",
   "/privacy-policy",
   "/terms",
-  "/contact"
+  "/contact",
+  "/faq"
 ];
   return routes.map((route) => ({ url: baseUrl + route, lastModified: new Date() }));
 }

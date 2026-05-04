@@ -41,3 +41,14 @@ After deploy:
 1. Open a tool page
 2. Right click → View Page Source
 3. Search: `hreflang`
+
+
+## Contact form setup
+The contact page uses Formspree:
+1. Create a free form at Formspree
+2. Copy your form ID
+3. Open `app/contact/page.js`
+4. Replace `YOUR_FORM_ID` with your real ID
+
+Example:
+`https://formspree.io/f/abcdwxyz`

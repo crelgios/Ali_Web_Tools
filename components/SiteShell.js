@@ -19,7 +19,20 @@ export default function SiteShell({ lang = "en", children }) {
         </div>
       </div>
       {children}
-      <div className="footer">{t.footer}</div>
+      
+      <div className="footer">
+        <p>{t.footer}</p>
+        <p className="footer-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <span> · </span>
+          <a href="/terms">Terms</a>
+          <span> · </span>
+          <a href="/contact">Contact</a>
+          <span> · </span>
+          <a href="/faq">FAQ</a>
+        </p>
+      </div>
+
     </div>
   );
 }
