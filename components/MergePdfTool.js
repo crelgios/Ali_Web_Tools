@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { PDFDocument } from "pdf-lib";
 
@@ -43,30 +44,48 @@ export default function MergePdfTool({ language = "en" }) {
     setFiles([]);
   }
 
+  const text = {
+    en: {
+      title: "Merge PDF",
+      sub: "Combine multiple PDF files into one PDF.",
+      empty: "No files selected",
+      button: "Merge PDF",
+      privacy: "Your PDF files are processed in your browser and are not stored."
+    },
+    hi: {
+      title: "PDF मिलाएं",
+      sub: "कई PDF फाइलों को एक PDF में मिलाएं।",
+      empty: "कोई फाइल चुनी नहीं गई",
+      button: "PDF मिलाएं",
+      privacy: "आपकी PDF फाइलें आपके ब्राउज़र में ही प्रोसेस होती हैं।"
+    },
+    es: {
+      title: "Unir PDF",
+      sub: "Combina varios archivos PDF en un solo PDF.",
+      empty: "No hay archivos seleccionados",
+      button: "Unir PDF",
+      privacy: "Tus archivos PDF se procesan en tu navegador y no se guardan."
+    }
+  };
+
+  const t = text[language] || text.en;
+
   return (
     <main className="container">
       <section className="hero">
-        <h1>{language === "hi" ? "PDF मिलाएं" : "Merge PDF"}</h1>
-        <p>
-          {language === "hi"
-            ? "कई PDF फाइलों को एक PDF में मिलाएं।"
-            : "Combine multiple PDF files into one PDF."}
-        </p>
+        <h1>{t.title}</h1>
+        <p>{t.sub}</p>
       </section>
 
       <div className="upload">
         <input type="file" accept="application/pdf" multiple onChange={handleFiles} />
-        <p>{files.length ? `${files.length} file(s) selected` : "No files selected"}</p>
+        <p>{files.length ? `${files.length} file(s) selected` : t.empty}</p>
         <button className="btn" onClick={mergePDFs} disabled={!files.length}>
-          {language === "hi" ? "PDF मिलाएं" : "Merge PDF"}
+          {t.button}
         </button>
       </div>
 
-      <div className="note">
-        {language === "hi"
-          ? "आपकी PDF फाइलें आपके ब्राउज़र में ही प्रोसेस होती हैं।"
-          : "Your PDF files are processed in your browser and are not stored."}
-      </div>
+      <div className="note">{t.privacy}</div>
     </main>
   );
 }

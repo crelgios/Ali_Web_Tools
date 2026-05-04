@@ -1,5 +1,6 @@
 export default function sitemap() {
   const baseUrl = "https://your-domain.com";
+
   const routes = [
     "",
     "/en/jpg-to-pdf",
@@ -8,6 +9,9 @@ export default function sitemap() {
     "/hi/jpg-to-pdf",
     "/hi/png-to-pdf",
     "/hi/merge-pdf",
+    "/es/jpg-to-pdf",
+    "/es/png-to-pdf",
+    "/es/merge-pdf",
     "/privacy-policy",
     "/terms",
     "/contact",
@@ -16,6 +20,6 @@ export default function sitemap() {
 
   return routes.map((route) => ({
     url: baseUrl + route,
-    lastModified: new Date(),
+    lastModified: new Date()
   }));
 }

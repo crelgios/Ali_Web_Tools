@@ -1,31 +1,30 @@
 # PDF Tools Vercel Starter
 
-## Tools included
+## Included
 - JPG to PDF
 - PNG to PDF
 - Merge PDF
+- English, Hindi, Spanish pages
+- Language switcher
+- SEO metadata
+- Sitemap and robots
+- Privacy, Terms, Contact pages
 
-## Features
-- Vercel ready
-- English + Hindi pages
-- Browser-based processing
-- No permanent file storage
-- SEO pages included
-- Sitemap and robots files included
-
-## How to run locally
+## Run locally
 ```bash
 npm install
 npm run dev
 ```
 
-## Deploy to Vercel
-1. Upload this folder to GitHub
-2. Import project in Vercel
-3. Click Deploy
+## Deploy
+1. Upload this project to GitHub
+2. Import it on Vercel
+3. Deploy
 
-## Important
-Before going live, update:
-- `https://your-domain.com` in `app/sitemap.js`
-- `https://your-domain.com/sitemap.xml` in `app/robots.js`
-- Contact email in `app/contact/page.js`
+## Change before final launch
+Update `https://your-domain.com` in:
+- `app/sitemap.js`
+- `app/robots.js`
+
+Also update the email in:
+- `app/contact/page.js`

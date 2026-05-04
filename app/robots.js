@@ -2,8 +2,8 @@ export default function robots() {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
+      allow: "/"
     },
-    sitemap: "https://your-domain.com/sitemap.xml",
+    sitemap: "https://your-domain.com/sitemap.xml"
   };
 }

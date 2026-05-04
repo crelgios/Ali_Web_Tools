@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { jsPDF } from "jspdf";
 
@@ -55,15 +56,34 @@ export default function ImageToPdfTool({ type = "JPEG", title = "Image to PDF", 
     setFiles([]);
   }
 
+  const text = {
+    en: {
+      sub: "Select your images and convert them into a PDF instantly.",
+      empty: "No files selected",
+      button: "Convert to PDF",
+      privacy: "Your files are processed in your browser. We do not upload or store your files."
+    },
+    hi: {
+      sub: "अपनी इमेज चुनें और तुरंत PDF बनाएं।",
+      empty: "कोई फाइल चुनी नहीं गई",
+      button: "PDF बनाएं",
+      privacy: "आपकी फाइलें आपके ब्राउज़र में ही प्रोसेस होती हैं। हम आपकी फाइलें सेव नहीं करते।"
+    },
+    es: {
+      sub: "Selecciona tus imágenes y conviértelas en PDF al instante.",
+      empty: "No hay archivos seleccionados",
+      button: "Convertir a PDF",
+      privacy: "Tus archivos se procesan en tu navegador. No subimos ni guardamos tus archivos."
+    }
+  };
+
+  const t = text[language] || text.en;
+
   return (
     <main className="container">
       <section className="hero">
         <h1>{title}</h1>
-        <p>
-          {language === "hi"
-            ? "अपनी इमेज चुनें और तुरंत PDF बनाएं।"
-            : "Select your images and convert them into a PDF instantly."}
-        </p>
+        <p>{t.sub}</p>
       </section>
 
       <div className="upload">
@@ -73,17 +93,13 @@ export default function ImageToPdfTool({ type = "JPEG", title = "Image to PDF", 
           multiple
           onChange={handleFiles}
         />
-        <p>{files.length ? `${files.length} file(s) selected` : "No files selected"}</p>
+        <p>{files.length ? `${files.length} file(s) selected` : t.empty}</p>
         <button className="btn" onClick={convert} disabled={!files.length}>
-          {language === "hi" ? "PDF बनाएं" : "Convert to PDF"}
+          {t.button}
         </button>
       </div>
 
-      <div className="note">
-        {language === "hi"
-          ? "आपकी फाइलें आपके ब्राउज़र में ही प्रोसेस होती हैं। हम आपकी फाइलें सेव नहीं करते।"
-          : "Your files are processed in your browser. We do not upload or store your files."}
-      </div>
+      <div className="note">{t.privacy}</div>
     </main>
   );
 }

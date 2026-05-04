@@ -1,8 +1,9 @@
 import "./globals.css";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 export const metadata = {
   title: "Free PDF Tools Online",
-  description: "Convert JPG, PNG and merge PDF files online for free. Fast, secure and browser-based.",
+  description: "Convert JPG, PNG and merge PDF files online for free. Fast, secure and browser-based."
 };
 
 export default function RootLayout({ children }) {
@@ -16,11 +17,13 @@ export default function RootLayout({ children }) {
               <a href="/en/jpg-to-pdf">JPG to PDF</a>
               <a href="/en/png-to-pdf">PNG to PDF</a>
               <a href="/en/merge-pdf">Merge PDF</a>
-              <a href="/hi/jpg-to-pdf">हिंदी</a>
+              <LanguageSwitcher />
             </div>
           </div>
         </div>
+
         {children}
+
         <div className="footer">
           Files are processed in your browser. We do not store your files.
         </div>

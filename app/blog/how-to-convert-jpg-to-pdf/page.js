@@ -1,6 +1,6 @@
 export const metadata = {
   title: "How to Convert JPG to PDF Online Free",
-  description: "Learn how to convert JPG images to PDF online for free using a fast and secure browser-based tool.",
+  description: "Learn how to convert JPG images to PDF online for free using a fast and secure browser-based tool."
 };
 
 export default function Page() {

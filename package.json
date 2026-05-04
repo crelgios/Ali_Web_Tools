@@ -1,5 +1,5 @@
 {
-  "name": "pdf-tools-vercel-starter",
+  "name": "pdf-tools-vercel-language-switcher",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@pdf-lib/fontkit": "latest",
     "jspdf": "latest",
     "next": "latest",
     "pdf-lib": "latest",
     "react": "latest",
     "react-dom": "latest"
-  },
-  "devDependencies": {}
+  }
 }

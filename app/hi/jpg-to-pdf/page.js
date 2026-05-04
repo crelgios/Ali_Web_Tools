@@ -6,7 +6,8 @@ export const metadata = {
   alternates: {
     languages: {
       en: "/en/jpg-to-pdf",
-      hi: "/hi/jpg-to-pdf"
+      hi: "/hi/jpg-to-pdf",
+      es: "/es/jpg-to-pdf"
     }
   }
 };

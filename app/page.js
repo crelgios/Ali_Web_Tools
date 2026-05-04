@@ -1,7 +1,7 @@
 const tools = [
   { title: "JPG to PDF", desc: "Convert JPG images into PDF files instantly.", link: "/en/jpg-to-pdf" },
   { title: "PNG to PDF", desc: "Convert PNG images into PDF files online.", link: "/en/png-to-pdf" },
-  { title: "Merge PDF", desc: "Combine multiple PDF files into one PDF.", link: "/en/merge-pdf" },
+  { title: "Merge PDF", desc: "Combine multiple PDF files into one PDF.", link: "/en/merge-pdf" }
 ];
 
 export default function Home() {
