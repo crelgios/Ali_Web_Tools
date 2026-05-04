@@ -2,6 +2,17 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { getText, getDir } from "../lib/translations";
 import { getTrustText } from "../lib/trustTranslations";
 
+
+const navLabels = {
+  en: { pdf: "PDF Tools", image: "Image Tools" },
+  hi: { pdf: "PDF टूल्स", image: "इमेज टूल्स" },
+  ar: { pdf: "أدوات PDF", image: "أدوات الصور" },
+  "zh-CN": { pdf: "PDF 工具", image: "图片工具" },
+  es: { pdf: "Herramientas PDF", image: "Herramientas de imagen" },
+  fr: { pdf: "Outils PDF", image: "Outils d’image" },
+  de: { pdf: "PDF-Tools", image: "Bild-Tools" }
+};
+
 const blogLabels = {
   en: "Blog", "zh-CN": "博客", es: "Blog", hi: "ब्लॉग", ar: "المدونة", pt: "Blog", fr: "Blog", de: "Blog", ja: "ブログ", ru: "Блог", id: "Blog", tr: "Blog", ko: "블로그", it: "Blog", nl: "Blog", pl: "Blog", th: "บล็อก", vi: "Blog", bn: "ব্লগ", ur: "بلاگ", fa: "وبلاگ", ms: "Blog"
 };
@@ -10,6 +21,7 @@ export default function SiteShell({ lang = "en", children }) {
   const t = getText(lang);
   const trust = getTrustText(lang);
   const dir = getDir(lang);
+  const nav = navLabels[lang] || navLabels.en;
 
   return (
     <div dir={dir}>
@@ -17,10 +29,8 @@ export default function SiteShell({ lang = "en", children }) {
         <div className="nav-inner">
           <a className="logo" href={`/${lang}`}>{t.logo}</a>
           <div className="links">
-            <a href={`/${lang}/jpg-to-pdf`}>{t.jpg}</a>
-            <a href={`/${lang}/png-to-pdf`}>{t.png}</a>
-            <a href={`/${lang}/merge-pdf`}>{t.merge}</a>
-            <a href={`/${lang}/image-editor`}>{t.imageEditor || "Image Editor"}</a>
+            <a href={`/${lang}/pdf-tools`}>{nav.pdf}</a>
+            <a href={`/${lang}/image-tools`}>{nav.image}</a>
             <a href={`/${lang}/blog`}>{blogLabels[lang] || "Blog"}</a>
             <LanguageSwitcher />
           </div>

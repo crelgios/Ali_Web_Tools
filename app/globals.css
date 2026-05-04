@@ -130,3 +130,5 @@
 .image-canvas { max-width: 100%; height: auto; background: white; border-radius: 12px; border: 1px solid #e5e7eb; }
 .tool-hero { padding-bottom: 25px; }
 @media (max-width: 850px) { .editor-grid { grid-template-columns: 1fr; } }
+
+.two-inputs{display:grid;grid-template-columns:1fr 1fr;gap:12px}hr{border:0;border-top:1px solid #e5e7eb;margin:18px 0}.editor-controls h2{font-size:20px;margin:18px 0 8px}.editor-controls select.input{cursor:pointer}.image-canvas:empty{min-height:260px}.preview-box{position:sticky;top:90px}@media(max-width:850px){.preview-box{position:static}.two-inputs{grid-template-columns:1fr}}
