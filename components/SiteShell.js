@@ -1,11 +1,12 @@
 import LanguageSwitcher from "./LanguageSwitcher";
-import { getText } from "../lib/translations";
+import { getText, getDir } from "../lib/translations";
 
 export default function SiteShell({ lang = "en", children }) {
   const t = getText(lang);
+  const dir = getDir(lang);
 
   return (
-    <>
+    <div dir={dir}>
       <div className="nav">
         <div className="nav-inner">
           <a className="logo" href={`/${lang}`}>{t.logo}</a>
@@ -17,10 +18,8 @@ export default function SiteShell({ lang = "en", children }) {
           </div>
         </div>
       </div>
-
       {children}
-
       <div className="footer">{t.footer}</div>
-    </>
+    </div>
   );
 }

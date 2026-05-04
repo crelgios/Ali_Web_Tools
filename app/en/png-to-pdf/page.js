@@ -1,15 +1,13 @@
 import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
+import { getHreflang } from "../../../lib/translations";
 
 export const metadata = {
-  title: "PNG to PDF Free Online",
-  description: "Convert PNG images to PDF online for free.",
+  title: "PNG to PDF",
+  description: "Convert PNG images into PDF files online.",
   alternates: {
-    languages: {
-      en: "/en/png-to-pdf",
-      hi: "/hi/png-to-pdf",
-      es: "/es/png-to-pdf"
-    }
+    canonical: "/en/png-to-pdf",
+    languages: getHreflang("png-to-pdf")
   }
 };
 

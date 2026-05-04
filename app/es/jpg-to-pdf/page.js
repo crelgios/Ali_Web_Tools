@@ -1,22 +1,20 @@
 import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
+import { getHreflang } from "../../../lib/translations";
 
 export const metadata = {
-  title: "Convertir JPG a PDF Gratis Online",
-  description: "Convierte imágenes JPG a PDF online gratis.",
+  title: "JPG a PDF",
+  description: "Convierte imágenes JPG en archivos PDF al instante.",
   alternates: {
-    languages: {
-      en: "/en/jpg-to-pdf",
-      hi: "/hi/jpg-to-pdf",
-      es: "/es/jpg-to-pdf"
-    }
+    canonical: "/es/jpg-to-pdf",
+    languages: getHreflang("jpg-to-pdf")
   }
 };
 
 export default function Page() {
   return (
     <SiteShell lang="es">
-      <ImageToPdfTool type="JPEG" title="Convertir JPG a PDF" language="es" />
+      <ImageToPdfTool type="JPEG" title="JPG a PDF" language="es" />
     </SiteShell>
   );
 }

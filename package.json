@@ -1,17 +1,7 @@
 {
-  "name": "pdf-tools-vercel-full-language",
+  "name": "pdf-tools-tier-languages-hreflang",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "jspdf": "latest",
-    "next": "latest",
-    "pdf-lib": "latest",
-    "react": "latest",
-    "react-dom": "latest"
-  }
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start" },
+  "dependencies": { "jspdf": "latest", "next": "latest", "pdf-lib": "latest", "react": "latest", "react-dom": "latest" }
 }

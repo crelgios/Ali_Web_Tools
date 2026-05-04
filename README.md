@@ -1,29 +1,27 @@
-# PDF Tools Vercel Full Language Version
+# PDF Tools - Tier 1, Tier 2, Tier 3 Languages + Hreflang
 
-## Fixed
-This version translates the full visible website:
-- Navbar
-- Footer
-- Homepage
-- Tool cards
-- Tool page title/description/buttons/notes
-- English, Hindi and Spanish routes
+Includes 22 language routes:
+Tier 1: English, Chinese Simplified, Spanish, Hindi, Arabic, Portuguese
+Tier 2: French, German, Japanese, Russian, Indonesian, Turkish
+Tier 3: Korean, Italian, Dutch, Polish, Thai, Vietnamese, Bengali, Urdu, Persian, Malay
 
-## Run locally
+Each tool page includes hreflang alternates for every language route.
+
+## Run
 ```bash
 npm install
 npm run dev
 ```
 
 ## Deploy
-1. Upload this folder to GitHub
-2. Import on Vercel
-3. Deploy
+Upload to GitHub, then import to Vercel.
 
-## Before final launch
-Update `https://your-domain.com` in:
-- `app/sitemap.js`
-- `app/robots.js`
+## Before launch
+Replace `https://your-domain.com` in:
+- app/sitemap.js
+- app/robots.js
 
-Update contact email in:
-- `app/contact/page.js`
+Update contact email:
+- app/contact/page.js
+
+Important: Some Tier 2/Tier 3 texts use simple starter translations. Improve them later for better SEO quality.

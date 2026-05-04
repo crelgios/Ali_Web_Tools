@@ -1,15 +1,13 @@
 import SiteShell from "../../../components/SiteShell";
 import MergePdfTool from "../../../components/MergePdfTool";
+import { getHreflang } from "../../../lib/translations";
 
 export const metadata = {
-  title: "PDF मिलाएं मुफ्त ऑनलाइन",
-  description: "कई PDF फाइलों को एक PDF में ऑनलाइन मुफ्त मिलाएं।",
+  title: "PDF मिलाएं",
+  description: "कई PDF फाइलों को एक PDF में मिलाएं।",
   alternates: {
-    languages: {
-      en: "/en/merge-pdf",
-      hi: "/hi/merge-pdf",
-      es: "/es/merge-pdf"
-    }
+    canonical: "/hi/merge-pdf",
+    languages: getHreflang("merge-pdf")
   }
 };
 

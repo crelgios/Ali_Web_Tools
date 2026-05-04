@@ -1,15 +1,13 @@
 import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
+import { getHreflang } from "../../../lib/translations";
 
 export const metadata = {
-  title: "JPG to PDF Free Online",
-  description: "Convert JPG images to PDF online for free.",
+  title: "JPG to PDF",
+  description: "Convert JPG images into PDF files instantly.",
   alternates: {
-    languages: {
-      en: "/en/jpg-to-pdf",
-      hi: "/hi/jpg-to-pdf",
-      es: "/es/jpg-to-pdf"
-    }
+    canonical: "/en/jpg-to-pdf",
+    languages: getHreflang("jpg-to-pdf")
   }
 };
 
