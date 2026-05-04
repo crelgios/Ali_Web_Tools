@@ -2,66 +2,41 @@ import SiteShell from "../../components/SiteShell";
 
 export const metadata = {
   title: "Contact Us | PDF Tools",
-  description: "Contact PDF Tools for support, feedback, business inquiries, or help with online PDF tools."
+  description: "Contact us for support, feedback or help."
 };
 
 export default function Page() {
   return (
     <SiteShell lang="en">
       <main className="container">
+
         <section className="hero">
           <h1>Contact Us</h1>
-          <p>Need help, found a problem, or want to share feedback? Send us a message.</p>
+          <p>Have a question or need help? Send us a message.</p>
         </section>
 
-        <section className="contact-grid">
-          <div className="card">
-            <h2>Send us a message</h2>
+        <div className="card" style={{ maxWidth: "600px", margin: "auto" }}>
+          
+          <form
+            action="https://formspree.io/f/xqenplzg"
+            method="POST"
+          >
+            <label>Name</label>
+            <input type="text" name="name" required className="input" placeholder="Your name" />
 
-            <form
-              action="https://formspree.io/f/xqenplzg"
-              method="POST"
-            >
-              <label htmlFor="name">Name</label>
-              <input id="name" name="name" type="text" required className="input" placeholder="Your name" />
+            <label>Email</label>
+            <input type="email" name="email" required className="input" placeholder="your@email.com" />
 
-              <label htmlFor="email">Email</label>
-              <input id="email" name="email" type="email" required className="input" placeholder="you@example.com" />
+            <label>Message</label>
+            <textarea name="message" required rows="6" className="input" placeholder="Write your message here"></textarea>
 
-              <label htmlFor="subject">Subject</label>
-              <input id="subject" name="subject" type="text" required className="input" placeholder="How can we help?" />
+            <button className="btn" style={{ width: "100%" }}>
+              Send Message
+            </button>
+          </form>
 
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" required rows="6" className="input" placeholder="Write your message here"></textarea>
+        </div>
 
-              <button className="btn contact-btn" type="submit">Send Message</button>
-            </form>
-
-            <p className="small-note">
-              Replace <b>YOUR_FORM_ID</b> with your Formspree form ID to make this form send emails.
-            </p>
-          </div>
-
-          <aside className="card">
-            <h2>Support</h2>
-            <p>For tool issues, bug reports, feedback, or business inquiries, contact us by email.</p>
-
-            <div className="contact-box">
-              <h3>Email</h3>
-              <p>support@yourdomain.com</p>
-            </div>
-
-            <div className="contact-box">
-              <h3>Business</h3>
-              <p>business@yourdomain.com</p>
-            </div>
-
-            <div className="contact-box">
-              <h3>Privacy</h3>
-              <p>Your files are processed in your browser whenever possible. We do not store your files.</p>
-            </div>
-          </aside>
-        </section>
       </main>
     </SiteShell>
   );
