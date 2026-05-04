@@ -1,6 +1,2 @@
-import SiteShell from "../../../components/SiteShell";
-import { getHreflang } from "../../../lib/translations";
-import CropImageTool from "../../../components/CropImageTool";
-
-export const metadata = { title: "Crop Image Online", description: "Crop images with rectangular selection privately in your browser.", alternates: { canonical: "/th/crop-image", languages: getHreflang("crop-image") } };
-export default function Page(){ return <SiteShell lang="th"><CropImageTool lang="th" /></SiteShell>; }
+import { redirect } from "next/navigation";
+export default function Page({ params }){ redirect(`/${params?.lang || "en"}/image-tools`); }

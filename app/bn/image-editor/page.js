@@ -1,4 +1,2 @@
-import SiteShell from "../../../components/SiteShell";
-import CropImageTool from "../../../components/CropImageTool";
-export const metadata={title:"Crop Image Online",description:"Crop images with rectangular selection privately in your browser."};
-export default function Page(){ return <SiteShell lang="bn"><CropImageTool lang="bn" /></SiteShell>; }
+import { redirect } from "next/navigation";
+export default function Page({ params }){ redirect(`/${params?.lang || "en"}/image-tools`); }
