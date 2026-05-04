@@ -7,7 +7,8 @@ export default function HomePage({ lang = "en" }) {
   const tools = [
     { title: t.jpg, desc: t.jpgDesc, link: `/${lang}/jpg-to-pdf`, icon: "🖼️" },
     { title: t.png, desc: t.pngDesc, link: `/${lang}/png-to-pdf`, icon: "🌄" },
-    { title: t.merge, desc: t.mergeDesc, link: `/${lang}/merge-pdf`, icon: "📎" }
+    { title: t.merge, desc: t.mergeDesc, link: `/${lang}/merge-pdf`, icon: "📎" },
+    { title: t.imageEditor, desc: t.imageEditorDesc, link: `/${lang}/image-editor`, icon: "🎨" }
   ];
 
   return (

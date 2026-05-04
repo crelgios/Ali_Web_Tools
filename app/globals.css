@@ -117,3 +117,16 @@
 .blog-post li {
   margin: 8px 0;
 }
+
+
+.editor-card { margin-top: 10px; }
+.editor-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 24px; align-items: start; }
+.editor-controls label { display: block; font-weight: 700; color: #374151; }
+.check-row { display: flex !important; gap: 8px; align-items: center; margin: 4px 0 14px; }
+.button-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 16px; }
+.light-btn { background: #eef2ff; color: #111827; }
+.preview-box { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px; text-align: center; }
+.preview-box h2 { margin-top: 0; }
+.image-canvas { max-width: 100%; height: auto; background: white; border-radius: 12px; border: 1px solid #e5e7eb; }
+.tool-hero { padding-bottom: 25px; }
+@media (max-width: 850px) { .editor-grid { grid-template-columns: 1fr; } }

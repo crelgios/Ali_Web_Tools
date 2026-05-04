@@ -20,6 +20,7 @@ export default function SiteShell({ lang = "en", children }) {
             <a href={`/${lang}/jpg-to-pdf`}>{t.jpg}</a>
             <a href={`/${lang}/png-to-pdf`}>{t.png}</a>
             <a href={`/${lang}/merge-pdf`}>{t.merge}</a>
+            <a href={`/${lang}/image-editor`}>{t.imageEditor || "Image Editor"}</a>
             <a href={`/${lang}/blog`}>{blogLabels[lang] || "Blog"}</a>
             <LanguageSwitcher />
           </div>
