@@ -19,7 +19,7 @@ export default function Page() {
             <h2>Send us a message</h2>
 
             <form
-              action="https://formspree.io/f/YOUR_FORM_ID"
+              action="https://formspree.io/f/xqenplzg"
               method="POST"
             >
               <label htmlFor="name">Name</label>
