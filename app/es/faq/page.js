@@ -1,9 +1,11 @@
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
+import { getTrustText, getTrustHreflang } from "../../../lib/trustTranslations";
+
+const trust = getTrustText("es");
 
 export const metadata = {
-  title: "Preguntas Frecuentes | PDF Tools",
-  description: "Respuestas a preguntas comunes sobre PDF Tools.",
+  title: `${trust.faqTitle} | PDF Tools`,
+  description: trust.faqDesc,
   alternates: {
     canonical: "/es/faq",
     languages: getTrustHreflang("faq")
@@ -15,14 +17,16 @@ export default function Page() {
     <SiteShell lang="es">
       <main className="container">
         <section className="hero">
-          <h1>Preguntas Frecuentes</h1>
-          <p>Respuestas a preguntas comunes sobre PDF Tools.</p>
+          <h1>{trust.faqTitle}</h1>
+          <p>{trust.faqDesc}</p>
         </section>
         <section className="faq-list">
-          <div className="card faq-card"><h2>¿Se guardan mis archivos?</h2><p>No. Los archivos se procesan en tu navegador cuando es posible y no los guardamos.</p></div>
-<div className="card faq-card"><h2>¿La herramienta es gratis?</h2><p>Sí, las herramientas básicas de PDF son gratis.</p></div>
-<div className="card faq-card"><h2>¿Funciona en móvil?</h2><p>Sí, funciona en navegadores móviles, tablets y escritorio.</p></div>
-<div className="card faq-card"><h2>¿Necesito una cuenta?</h2><p>No se requiere registro.</p></div>
+          {trust.faq.map(([q, a]) => (
+            <div className="card faq-card" key={q}>
+              <h2>{q}</h2>
+              <p>{a}</p>
+            </div>
+          ))}
         </section>
       </main>
     </SiteShell>

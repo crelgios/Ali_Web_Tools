@@ -1,9 +1,11 @@
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
+import { getTrustText, getTrustHreflang } from "../../../lib/trustTranslations";
+
+const trust = getTrustText("ja");
 
 export const metadata = {
-  title: "よくある質問 | PDF Tools",
-  description: "よくある質問",
+  title: `${trust.faqTitle} | PDF Tools`,
+  description: trust.faqDesc,
   alternates: {
     canonical: "/ja/faq",
     languages: getTrustHreflang("faq")
@@ -15,13 +17,16 @@ export default function Page() {
     <SiteShell lang="ja">
       <main className="container">
         <section className="hero">
-          <h1>よくある質問</h1>
-          <p>よくある質問</p>
+          <h1>{trust.faqTitle}</h1>
+          <p>{trust.faqDesc}</p>
         </section>
         <section className="faq-list">
-          <div className="card faq-card"><h2>Are files stored?</h2><p>No, files are processed in your browser whenever possible.</p></div>
-<div className="card faq-card"><h2>Is it free?</h2><p>Yes, basic PDF tools are free.</p></div>
-<div className="card faq-card"><h2>Does it work on mobile?</h2><p>Yes, it works on mobile and desktop browsers.</p></div>
+          {trust.faq.map(([q, a]) => (
+            <div className="card faq-card" key={q}>
+              <h2>{q}</h2>
+              <p>{a}</p>
+            </div>
+          ))}
         </section>
       </main>
     </SiteShell>
