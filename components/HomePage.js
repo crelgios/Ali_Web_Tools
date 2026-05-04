@@ -17,7 +17,7 @@ export default function HomePage({ lang = "en" }) {
           <p>{c.homeDesc}</p>
           <a className="btn" href={`/${lang}/pdf-tools`}>🚀 {c.pdfCategory}</a>
         </section>
-        <div className="trustbar"><span>⚡ Fast</span><span>🔒 Secure</span><span>🌍 Free</span><span>📱 Mobile Friendly</span></div>
+        <div className="trustbar"><span>⚡ {c.fast}</span><span>🔒 {c.secure}</span><span>🌍 {c.free}</span><span>📱 {c.mobile}</span></div>
         <section className="grid">
           {categories.map((item) => (
             <div className="card tool-card" key={item.title}>
