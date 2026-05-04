@@ -85,8 +85,8 @@ export default function ImageEditorTool({ lang = "en" }) {
   function draw(img = imageRef.current, next = {}) {
     const canvas = canvasRef.current;
     if (!canvas || !img) return;
-    const w = Math.max(1, parseInt(next.width ?? width || img.naturalWidth, 10));
-    const h = Math.max(1, parseInt(next.height ?? height || img.naturalHeight, 10));
+    const w = Math.max(1, parseInt((next.width ?? width ?? img.naturalWidth), 10));
+    const h = Math.max(1, parseInt((next.height ?? height ?? img.naturalHeight), 10));
     const angle = ((next.rotation ?? rotation) % 360 + 360) % 360;
     const sx = next.flipX ?? flipX;
     const sy = next.flipY ?? flipY;
