@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "문의하기 | Ali W Vide",
+  title: "문의하기 | PDF Tools",
   description: "질문이 있거나 도움이 필요하신가요? 메시지를 보내주세요.",
   alternates: {
     canonical: "/ko/contact",

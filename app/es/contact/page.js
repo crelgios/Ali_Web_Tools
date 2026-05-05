@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "Contáctanos | Ali W Vide",
+  title: "Contáctanos | PDF Tools",
   description: "¿Tienes una pregunta o necesitas ayuda? Envíanos un mensaje.",
   alternates: {
     canonical: "/es/contact",

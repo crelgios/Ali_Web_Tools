@@ -1,5 +1,5 @@
 import { PdfToolsPage } from "../../../components/ToolCategoryPages";
 import { getHreflang } from "../../../lib/translations";
 
-export const metadata = { title: "Ali W Vide", description: "Free online Ali W Vide to convert JPG, PNG and merge PDF files.", alternates: { canonical: "/pl/pdf-tools", languages: getHreflang("pdf-tools") } };
+export const metadata = { title: "PDF Tools", description: "Free online PDF Tools to convert JPG, PNG and merge PDF files.", alternates: { canonical: "/pl/pdf-tools", languages: getHreflang("pdf-tools") } };
 export default function Page(){ return <PdfToolsPage lang="pl" />; }

@@ -1,7 +1,7 @@
 import SiteShell from "./SiteShell";
 
 const blogText = {
-  en: { heading: "Ali W Vide Blog", intro: "Simple guides to help you convert, merge and manage PDF files safely.", read: "Read Guide" },
+  en: { heading: "PDF Tools Blog", intro: "Simple guides to help you convert, merge and manage PDF files safely.", read: "Read Guide" },
   "zh-CN": { heading: "PDF 工具博客", intro: "帮助你安全转换、合并和管理 PDF 文件的简单指南。", read: "阅读指南" },
   es: { heading: "Blog de herramientas PDF", intro: "Guías sencillas para convertir, unir y gestionar archivos PDF de forma segura.", read: "Leer guía" },
   hi: { heading: "PDF टूल्स ब्लॉग", intro: "PDF फाइलों को सुरक्षित तरीके से कन्वर्ट, मर्ज और मैनेज करने की आसान गाइड।", read: "गाइड पढ़ें" },
@@ -15,7 +15,7 @@ const blogText = {
   tr: { heading: "PDF Araçları Blogu", intro: "PDF dosyalarını güvenle dönüştürmek, birleştirmek ve yönetmek için basit rehberler.", read: "Rehberi Oku" },
   ko: { heading: "PDF 도구 블로그", intro: "PDF 파일을 안전하게 변환, 병합, 관리하는 쉬운 가이드입니다.", read: "가이드 읽기" },
   it: { heading: "Blog Strumenti PDF", intro: "Guide semplici per convertire, unire e gestire file PDF in modo sicuro.", read: "Leggi la guida" },
-  nl: { heading: "Ali W Vide Blog", intro: "Eenvoudige handleidingen om PDF-bestanden veilig te converteren, samen te voegen en te beheren.", read: "Lees gids" },
+  nl: { heading: "PDF Tools Blog", intro: "Eenvoudige handleidingen om PDF-bestanden veilig te converteren, samen te voegen en te beheren.", read: "Lees gids" },
   pl: { heading: "Blog narzędzi PDF", intro: "Proste poradniki do bezpiecznej konwersji, łączenia i zarządzania plikami PDF.", read: "Czytaj poradnik" },
   th: { heading: "บล็อกเครื่องมือ PDF", intro: "คู่มือง่าย ๆ สำหรับแปลง รวม และจัดการไฟล์ PDF อย่างปลอดภัย", read: "อ่านคู่มือ" },
   vi: { heading: "Blog công cụ PDF", intro: "Hướng dẫn đơn giản để chuyển đổi, gộp và quản lý tệp PDF an toàn.", read: "Đọc hướng dẫn" },
@@ -32,7 +32,7 @@ const postText = {
     ["convert-jpg-to-pdf-mobile", "Convert JPG to PDF on Mobile (No App Needed)", "Convert JPG images to PDF on Android or iPhone directly from your browser."],
     ["best-free-jpg-to-pdf-converter", "Best Free JPG to PDF Converter Online (No Signup Required)", "What makes a good free JPG to PDF converter and how to use one without signup."],
     ["merge-pdf-online-free", "How to Merge PDF Files Online Free Without Software", "Combine multiple PDF files into one document easily from your browser."],
-    ["top-free-pdf-tools-online", "Top Free Ali W Vide Online You Should Use in 2026", "Useful free Ali W Vide for converting images to PDF and merging PDF files."],
+    ["top-free-pdf-tools-online", "Top Free PDF Tools Online You Should Use in 2026", "Useful free PDF Tools for converting images to PDF and merging PDF files."],
   ],
   hi: [
     ["convert-excel-word-ppt-to-pdf-without-uploading-data", "Excel, Word और PowerPoint को PDF में कैसे बदलें बिना डेटा अपलोड किए", "Save As, Export और Microsoft Print to PDF से निजी फाइलें वेबसाइट पर अपलोड किए बिना PDF बनाएं।"],
@@ -40,7 +40,7 @@ const postText = {
     ["convert-jpg-to-pdf-mobile", "मोबाइल पर JPG को PDF में बदलें", "Android या iPhone ब्राउज़र से JPG इमेज को PDF में बदलें।"],
     ["best-free-jpg-to-pdf-converter", "सबसे अच्छा फ्री JPG to PDF Converter", "बिना signup JPG to PDF converter कैसे चुनें और इस्तेमाल करें।"],
     ["merge-pdf-online-free", "PDF फाइलें फ्री में कैसे मर्ज करें", "कई PDF फाइलों को एक PDF में आसानी से जोड़ें।"],
-    ["top-free-pdf-tools-online", "2026 के लिए बेस्ट फ्री Ali W Vide", "PDF convert और merge करने के उपयोगी फ्री ऑनलाइन टूल्स।"],
+    ["top-free-pdf-tools-online", "2026 के लिए बेस्ट फ्री PDF Tools", "PDF convert और merge करने के उपयोगी फ्री ऑनलाइन टूल्स।"],
   ],
   ar: [
     ["convert-excel-word-ppt-to-pdf-without-uploading-data", "كيفية تحويل Excel وWord وPowerPoint إلى PDF دون رفع بياناتك", "طرق آمنة لتحويل الملفات إلى PDF باستخدام Save As وExport وMicrosoft Print to PDF دون رفعها."],

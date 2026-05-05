@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "利用規約 | Ali W Vide",
+  title: "利用規約 | PDF Tools",
   description: "利用規約",
   alternates: {
     canonical: "/ja/terms",
@@ -19,7 +19,7 @@ export default function Page() {
           <p>利用規約</p>
         </section>
         <article className="card blog-post">
-          <p>Use Ali W Vide responsibly.</p>
+          <p>Use PDF Tools responsibly.</p>
 <p>You are responsible for the files you process.</p>
 <p>Do not use this website for illegal or harmful activity.</p>
         </article>

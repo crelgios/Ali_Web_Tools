@@ -88,8 +88,8 @@ const simplePosts = {
     ar: ["كيفية دمج ملفات PDF مجاناً", "دمج PDF يساعدك على جمع عدة مستندات في ملف واحد.", "افتح أداة الدمج، اختر الملفات، رتّبها، ثم حمّل ملف PDF النهائي."]
   },
   "top-free-pdf-tools-online": {
-    en: ["Top Free Ali W Vide Online You Should Use in 2026", "Free Ali W Vide help you convert images, merge files and manage documents quickly.", "Useful tools include JPG to PDF, PNG to PDF and Merge PDF."],
-    hi: ["2026 के लिए बेस्ट फ्री Ali W Vide", "Free Ali W Vide से images convert, files merge और documents manage करना आसान होता है।", "Useful tools में JPG to PDF, PNG to PDF और Merge PDF शामिल हैं।"],
+    en: ["Top Free PDF Tools Online You Should Use in 2026", "Free PDF Tools help you convert images, merge files and manage documents quickly.", "Useful tools include JPG to PDF, PNG to PDF and Merge PDF."],
+    hi: ["2026 के लिए बेस्ट फ्री PDF Tools", "Free PDF Tools से images convert, files merge और documents manage करना आसान होता है।", "Useful tools में JPG to PDF, PNG to PDF और Merge PDF शामिल हैं।"],
     ar: ["أفضل أدوات PDF مجانية في 2026", "أدوات PDF المجانية تساعدك على تحويل الصور ودمج الملفات بسرعة.", "من الأدوات المفيدة JPG to PDF وPNG to PDF وMerge PDF."]
   }
 };
@@ -117,7 +117,7 @@ function PostContent({ slug, lang }) {
     const p = localizedMain(lang);
     return (
       <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.intro, image: "/images/print-to-pdf-guide.png", author: { "@type": "Organization", name: "Ali W Vide" }, publisher: { "@type": "Organization", name: "Ali W Vide" } }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.intro, image: "/images/print-to-pdf-guide.png", author: { "@type": "Organization", name: "PDF Tools" }, publisher: { "@type": "Organization", name: "PDF Tools" } }) }} />
         <h1>{p.title}</h1>
         <p>{p.intro}</p>
         <h2>{l.why}</h2>

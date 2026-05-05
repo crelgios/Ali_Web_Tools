@@ -4,7 +4,7 @@ import { getTrustText, getTrustHreflang } from "../../../lib/trustTranslations";
 const trust = getTrustText("es");
 
 export const metadata = {
-  title: `${trust.faqTitle} | Ali W Vide`,
+  title: `${trust.faqTitle} | PDF Tools`,
   description: trust.faqDesc,
   alternates: {
     canonical: "/es/faq",
