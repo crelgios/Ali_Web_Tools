@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "গোপনীয়তা নীতি | PDF Tools",
+  title: "গোপনীয়তা নীতি | Ali W Vide",
   description: "গোপনীয়তা নীতি",
   alternates: {
     canonical: "/bn/privacy-policy",
@@ -21,7 +21,7 @@ export default function Page() {
         <article className="card blog-post">
           <p>Files are processed in your browser whenever possible.</p>
 <p>We do not permanently store your uploaded files.</p>
-<p>This page explains how we protect your privacy while using PDF Tools.</p>
+<p>This page explains how we protect your privacy while using Ali W Vide.</p>
         </article>
       </main>
     </SiteShell>

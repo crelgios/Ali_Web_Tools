@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "شروط الخدمة | PDF Tools",
+  title: "شروط الخدمة | Ali W Vide",
   description: "باستخدام أدوات PDF، فإنك توافق على استخدام الموقع بشكل مسؤول.",
   alternates: {
     canonical: "/ar/terms",

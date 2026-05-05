@@ -1,17 +1,5 @@
 import "./globals.css";
-
-export const metadata = {
-  title: "Free AliWVide",
-  description: "Convert JPG, PNG and merge PDF files online for free.",
-  verification: {
-    google: "Jr5DPyU3bIUowIsWmtUdP3ppLM6qyUwnMjGBgPcgZc0",
-  },
-};
-
+export const metadata = { title: "Free Ali W Vide Online", description: "Convert JPG, PNG and merge PDF files online for free." };
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return <html lang="en"><body>{children}</body></html>;
 }

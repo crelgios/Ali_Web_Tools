@@ -1,8 +1,8 @@
 import LocaleRedirect from "../../components/LocaleRedirect";
 
 export const metadata = {
-  title: "Terms of Service | PDF Tools",
-  description: "Read the PDF Tools terms of service."
+  title: "Terms of Service | Ali W Vide",
+  description: "Read the Ali W Vide terms of service."
 };
 
 export default function Page() {

@@ -1,8 +1,8 @@
 import BlogPost from "../../../../components/BlogPost";
 
 export const metadata = {
-  title: "PDF Tools Blog Guide",
-  description: "Helpful PDF guide for free online PDF tools."
+  title: "Ali W Vide Blog Guide",
+  description: "Helpful PDF guide for free online Ali W Vide."
 };
 
 export default function Page() {

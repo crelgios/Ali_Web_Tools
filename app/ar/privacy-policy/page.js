@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "سياسة الخصوصية | PDF Tools",
+  title: "سياسة الخصوصية | Ali W Vide",
   description: "خصوصيتك مهمة لنا. تتم معالجة الملفات في متصفحك كلما أمكن ولا نقوم بتخزين ملفاتك.",
   alternates: {
     canonical: "/ar/privacy-policy",

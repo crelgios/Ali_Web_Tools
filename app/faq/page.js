@@ -1,8 +1,8 @@
 import LocaleRedirect from "../../components/LocaleRedirect";
 
 export const metadata = {
-  title: "FAQ | PDF Tools",
-  description: "Answers to common questions about PDF Tools."
+  title: "FAQ | Ali W Vide",
+  description: "Answers to common questions about Ali W Vide."
 };
 
 export default function Page() {

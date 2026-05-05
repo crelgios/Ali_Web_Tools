@@ -2,7 +2,7 @@ import SiteShell from "../../../components/SiteShell";
 import { getTrustHreflang } from "../../../lib/trustTranslations";
 
 export const metadata = {
-  title: "Política de Privacidad | PDF Tools",
+  title: "Política de Privacidad | Ali W Vide",
   description: "Tu privacidad es importante. Los archivos se procesan en tu navegador cuando es posible y no guardamos tus archivos.",
   alternates: {
     canonical: "/es/privacy-policy",
@@ -19,7 +19,7 @@ export default function Page() {
           <p>Tu privacidad es importante. Los archivos se procesan en tu navegador cuando es posible y no guardamos tus archivos.</p>
         </section>
         <article className="card blog-post">
-          <p>Creamos PDF Tools para ser simple, útil y respetuoso con la privacidad.</p>
+          <p>Creamos Ali W Vide para ser simple, útil y respetuoso con la privacidad.</p>
 <p>En las herramientas basadas en navegador, tus archivos se procesan en tu dispositivo siempre que sea posible.</p>
 <p>No almacenamos permanentemente tus archivos subidos.</p>
 <p>Podemos usar analítica básica o publicidad en el futuro para mejorar y mantener el sitio.</p>

@@ -35,7 +35,7 @@ export default function Page() {
   return (
     <main className="container">
       <section className="hero">
-        <h1>Free Online PDF Tools</h1>
+        <h1>Free Online Ali W Vide</h1>
         <p>Loading your language...</p>
       </section>
     </main>
