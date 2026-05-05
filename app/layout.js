@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Free PDF Tools Online",
+  title: "Free AliWVide",
   description: "Convert JPG, PNG and merge PDF files online for free.",
   verification: {
     google: "Jr5DPyU3bIUowIsWmtUdP3ppLM6qyUwnMjGBgPcgZc0",
