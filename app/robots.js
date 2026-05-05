@@ -1,3 +1,11 @@
 export default function robots() {
-  return { rules: { userAgent: "*", allow: "/" }, sitemap: "https://www.aliwvide.com/sitemap.xml" };
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+    ],
+    sitemap: "https://www.aliwvide.com/sitemap.xml",
+  };
 }
