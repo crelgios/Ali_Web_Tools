@@ -1,10 +1,10 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import SiteShell from "../../../components/SiteShell";
 import { getTrustText, getTrustHreflang } from "../../../lib/trustTranslations";
 
 const trust = getTrustText("bn");
 
-export const metadata = createMetadata("bn", "faq");
+export const metadata = createPageMetadata("bn", "faq");
 
 export default function Page() {
   return (

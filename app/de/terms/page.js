@@ -1,7 +1,8 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import SiteShell from "../../../components/SiteShell";
+import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = createMetadata("de", "terms");
+export const metadata = createPageMetadata("de", "terms");
 
 export default function Page() {
   return (

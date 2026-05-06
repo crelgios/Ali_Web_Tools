@@ -1,6 +1,6 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import SiteShell from "../../../components/SiteShell";
 import CompressImageTool from "../../../components/CompressImageTool";
 
-export const metadata = createMetadata("tr", "image-compressor");
+export const metadata = createPageMetadata("tr", "image-compressor");
 export default function Page(){ return <SiteShell lang="tr"><CompressImageTool lang="tr" /></SiteShell>; }

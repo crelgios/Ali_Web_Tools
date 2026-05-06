@@ -1,4 +1,4 @@
-import { createMetadata } from "../../lib/seoConfig";
+import { createPageMetadata } from "../../lib/seo";
 import HomePage from "../../components/HomePage";
-export const metadata = createMetadata("hi", "");
+export const metadata = createPageMetadata("hi", "home");
 export default function Page(){ return <HomePage lang="hi" />; }

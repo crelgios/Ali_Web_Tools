@@ -1,8 +1,8 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import SiteShell from "../../../components/SiteShell";
 import MergePdfTool from "../../../components/MergePdfTool";
 
-export const metadata = createMetadata("id", "merge-pdf");
+export const metadata = createPageMetadata("id", "merge-pdf");
 
 export default function Page() {
   return (

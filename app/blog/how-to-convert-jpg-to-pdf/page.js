@@ -1,7 +1,9 @@
-import { createBlogMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
 
-export const metadata = createBlogMetadata("en", "how-to-convert-jpg-to-pdf");
+export const metadata = {
+  title: "How to Convert JPG to PDF Online Free",
+  description: "Learn how to convert JPG images to PDF online for free using a fast and secure browser-based tool."
+};
 
 export default function Page() {
   return (

@@ -1,8 +1,8 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
 
-export const metadata = createMetadata("pl", "jpg-to-pdf");
+export const metadata = createPageMetadata("pl", "jpg-to-pdf");
 
 export default function Page() {
   return (

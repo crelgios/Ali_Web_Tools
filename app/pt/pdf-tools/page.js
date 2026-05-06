@@ -1,5 +1,5 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import { PdfToolsPage } from "../../../components/ToolCategoryPages";
 
-export const metadata = createMetadata("pt", "pdf-tools");
+export const metadata = createPageMetadata("pt", "pdf-tools");
 export default function Page(){ return <PdfToolsPage lang="pt" />; }

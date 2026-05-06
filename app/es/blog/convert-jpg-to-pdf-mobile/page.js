@@ -1,7 +1,9 @@
-import { createBlogMetadata } from "../../../../lib/seoConfig";
 import BlogPost from "../../../../components/BlogPost";
 
-export const metadata = createBlogMetadata("es", "convert-jpg-to-pdf-mobile");
+export const metadata = {
+  title: "PDF Tools Blog Guide",
+  description: "Helpful PDF guide for free online PDF Tools."
+};
 
 export default function Page() {
   return <BlogPost lang="es" slug="convert-jpg-to-pdf-mobile" />;

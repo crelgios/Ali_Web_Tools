@@ -1,7 +1,9 @@
-import { createBlogMetadata } from "../../../../lib/seoConfig";
 import BlogPost from "../../../../components/BlogPost";
 
-export const metadata = createBlogMetadata("fr", "merge-pdf-online-free");
+export const metadata = {
+  title: "PDF Tools Blog Guide",
+  description: "Helpful PDF guide for free online PDF Tools."
+};
 
 export default function Page() {
   return <BlogPost lang="fr" slug="merge-pdf-online-free" />;

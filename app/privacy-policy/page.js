@@ -1,7 +1,7 @@
-import { createMetadata } from "../../lib/seoConfig";
+import { createPageMetadata } from "../../lib/seo";
 import LocaleRedirect from "../../components/LocaleRedirect";
 
-export const metadata = createMetadata("en", "privacy-policy");
+export const metadata = createPageMetadata("en", "privacy-policy");
 
 export default function Page() {
   return <LocaleRedirect path="privacy-policy" />;

@@ -1,9 +1,14 @@
-import { SITE_URL, buildUrl } from "../lib/seoConfig";
+import { baseUrl } from "../lib/seo";
 
 export default function robots() {
   return {
-    rules: { userAgent: "*", allow: "/" },
-    sitemap: buildUrl("/sitemap.xml"),
-    host: SITE_URL,
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+    ],
+    sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

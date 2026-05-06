@@ -1,7 +1,7 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import BlogIndex from "../../../components/BlogIndex";
 
-export const metadata = createMetadata("vi", "blog");
+export const metadata = createPageMetadata("vi", "blog");
 
 export default function Page() {
   return <BlogIndex lang="vi" />;

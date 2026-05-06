@@ -1,6 +1,6 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import SiteShell from "../../../components/SiteShell";
 import JpgToPngTool from "../../../components/JpgToPngTool";
 
-export const metadata = createMetadata("nl", "jpg-to-png");
+export const metadata = createPageMetadata("nl", "jpg-to-png");
 export default function Page(){ return <SiteShell lang="nl"><JpgToPngTool lang="nl" /></SiteShell>; }

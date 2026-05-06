@@ -1,5 +1,5 @@
-import { createMetadata } from "../../../lib/seoConfig";
+import { createPageMetadata } from "../../../lib/seo";
 import { ImageToolsPage } from "../../../components/ToolCategoryPages";
 
-export const metadata = createMetadata("ja", "image-tools");
+export const metadata = createPageMetadata("ja", "image-tools");
 export default function Page(){ return <ImageToolsPage lang="ja" />; }

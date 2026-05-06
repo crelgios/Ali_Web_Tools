@@ -1,11 +1,7 @@
 import "./globals.css";
-import { SITE_URL, SITE_NAME } from "../lib/seoConfig";
+import { createPageMetadata } from "../lib/seo";
 
-export const metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
-  description: "Free PDF and image tools online. Files are processed privately in your browser.",
-};
+export const metadata = createPageMetadata("en", "home");
 
 export default function RootLayout({ children }) {
   return (
