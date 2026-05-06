@@ -1,5 +1,5 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import { PdfToolsPage } from "../../../components/ToolCategoryPages";
-import { getHreflang } from "../../../lib/translations";
 
-export const metadata = { title: "PDF Tools", description: "Free online PDF Tools to convert JPG, PNG and merge PDF files.", alternates: { canonical: "/id/pdf-tools", languages: getHreflang("pdf-tools") } };
+export const metadata = createMetadata("id", "pdf-tools");
 export default function Page(){ return <PdfToolsPage lang="id" />; }

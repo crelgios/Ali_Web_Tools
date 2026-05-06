@@ -1,9 +1,7 @@
+import { createMetadata } from "../../lib/seoConfig";
 import LocaleRedirect from "../../components/LocaleRedirect";
 
-export const metadata = {
-  title: "Privacy Policy | PDF Tools",
-  description: "Read the PDF Tools privacy policy."
-};
+export const metadata = createMetadata("en", "privacy-policy");
 
 export default function Page() {
   return <LocaleRedirect path="privacy-policy" />;

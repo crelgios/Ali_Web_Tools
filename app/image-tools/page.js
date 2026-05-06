@@ -1,3 +1,4 @@
+import { createMetadata } from "../../lib/seoConfig";
 import { ImageToolsPage } from "../../components/ToolCategoryPages";
-export const metadata = { title: "Image Tools", description: "Free online tools." };
+export const metadata = createMetadata("en", "image-tools");
 export default function Page(){ return <ImageToolsPage lang="en" />; }

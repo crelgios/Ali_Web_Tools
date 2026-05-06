@@ -1,16 +1,10 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
 import { getTrustText, getTrustHreflang } from "../../../lib/trustTranslations";
 
 const trust = getTrustText("nl");
 
-export const metadata = {
-  title: `${trust.faqTitle} | PDF Tools`,
-  description: trust.faqDesc,
-  alternates: {
-    canonical: "/nl/faq",
-    languages: getTrustHreflang("faq")
-  }
-};
+export const metadata = createMetadata("nl", "faq");
 
 export default function Page() {
   return (

@@ -1,15 +1,8 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
-import { getHreflang } from "../../../lib/translations";
 
-export const metadata = {
-  title: "PNG به PDF",
-  description: "PNG به PDF online.",
-  alternates: {
-    canonical: "/fa/png-to-pdf",
-    languages: getHreflang("png-to-pdf")
-  }
-};
+export const metadata = createMetadata("fa", "png-to-pdf");
 
 export default function Page() {
   return (

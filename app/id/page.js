@@ -1,3 +1,4 @@
+import { createMetadata } from "../../lib/seoConfig";
 import HomePage from "../../components/HomePage";
-export const metadata = { title: "Alat PDF Online Gratis", description: "Ubah gambar ke PDF dan gabungkan PDF dengan cepat, gratis, dan aman." };
+export const metadata = createMetadata("id", "");
 export default function Page(){ return <HomePage lang="id" />; }

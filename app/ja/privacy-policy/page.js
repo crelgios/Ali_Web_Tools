@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "プライバシーポリシー | PDF Tools",
-  description: "プライバシーポリシー",
-  alternates: {
-    canonical: "/ja/privacy-policy",
-    languages: getTrustHreflang("privacy-policy")
-  }
-};
+export const metadata = createMetadata("ja", "privacy-policy");
 
 export default function Page() {
   return (

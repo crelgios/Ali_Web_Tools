@@ -1,6 +1,6 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getHreflang } from "../../../lib/translations";
 import CompressImageTool from "../../../components/CompressImageTool";
 
-export const metadata = { title: "Image Compressor Online", description: "Compress images privately in your browser.", alternates: { canonical: "/th/image-compressor", languages: getHreflang("image-compressor") } };
+export const metadata = createMetadata("th", "image-compressor");
 export default function Page(){ return <SiteShell lang="th"><CompressImageTool lang="th" /></SiteShell>; }

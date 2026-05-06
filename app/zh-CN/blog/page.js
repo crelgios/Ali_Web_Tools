@@ -1,9 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import BlogIndex from "../../../components/BlogIndex";
 
-export const metadata = {
-  title: "PDF Tools Blog | Guides and Tips",
-  description: "Helpful PDF guides about JPG to PDF, PNG to PDF, merge PDF and free online PDF Tools."
-};
+export const metadata = createMetadata("zh-CN", "blog");
 
 export default function Page() {
   return <BlogIndex lang="zh-CN" />;

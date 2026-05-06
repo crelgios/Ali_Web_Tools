@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "Política de Privacidad | PDF Tools",
-  description: "Tu privacidad es importante. Los archivos se procesan en tu navegador cuando es posible y no guardamos tus archivos.",
-  alternates: {
-    canonical: "/es/privacy-policy",
-    languages: getTrustHreflang("privacy-policy")
-  }
-};
+export const metadata = createMetadata("es", "privacy-policy");
 
 export default function Page() {
   return (

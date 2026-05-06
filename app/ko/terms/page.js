@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "서비스 약관 | PDF Tools",
-  description: "서비스 약관",
-  alternates: {
-    canonical: "/ko/terms",
-    languages: getTrustHreflang("terms")
-  }
-};
+export const metadata = createMetadata("ko", "terms");
 
 export default function Page() {
   return (

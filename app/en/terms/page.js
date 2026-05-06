@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "Terms of Service | PDF Tools",
-  description: "By using PDF Tools, you agree to use the website responsibly.",
-  alternates: {
-    canonical: "/en/terms",
-    languages: getTrustHreflang("terms")
-  }
-};
+export const metadata = createMetadata("en", "terms");
 
 export default function Page() {
   return (

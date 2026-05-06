@@ -1,6 +1,6 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
 import ImageEditorTool from "../../../components/ImageEditorTool";
-import { getHreflang } from "../../../lib/translations";
 
-export const metadata = { title: "Add Text to Image", description: "Add text to photos online without uploading files.", alternates: { canonical: "/ar/add-text-to-image", languages: getHreflang("add-text-to-image") } };
+export const metadata = createMetadata("ar", "add-text-to-image");
 export default function Page(){ return <SiteShell lang="ar"><ImageEditorTool lang="ar" /></SiteShell>; }

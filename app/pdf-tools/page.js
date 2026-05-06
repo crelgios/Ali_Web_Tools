@@ -1,3 +1,4 @@
+import { createMetadata } from "../../lib/seoConfig";
 import { PdfToolsPage } from "../../components/ToolCategoryPages";
-export const metadata = { title: "Pdf Tools", description: "Free online tools." };
+export const metadata = createMetadata("en", "pdf-tools");
 export default function Page(){ return <PdfToolsPage lang="en" />; }

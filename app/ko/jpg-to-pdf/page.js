@@ -1,15 +1,8 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
 import ImageToPdfTool from "../../../components/ImageToPdfTool";
-import { getHreflang } from "../../../lib/translations";
 
-export const metadata = {
-  title: "JPG를 PDF로",
-  description: "JPG를 PDF로 online.",
-  alternates: {
-    canonical: "/ko/jpg-to-pdf",
-    languages: getHreflang("jpg-to-pdf")
-  }
-};
+export const metadata = createMetadata("ko", "jpg-to-pdf");
 
 export default function Page() {
   return (

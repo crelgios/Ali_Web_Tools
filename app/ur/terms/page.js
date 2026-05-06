@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "سروس کی شرائط | PDF Tools",
-  description: "سروس کی شرائط",
-  alternates: {
-    canonical: "/ur/terms",
-    languages: getTrustHreflang("terms")
-  }
-};
+export const metadata = createMetadata("ur", "terms");
 
 export default function Page() {
   return (

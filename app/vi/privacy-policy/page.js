@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "Chính sách quyền riêng tư | PDF Tools",
-  description: "Chính sách quyền riêng tư",
-  alternates: {
-    canonical: "/vi/privacy-policy",
-    languages: getTrustHreflang("privacy-policy")
-  }
-};
+export const metadata = createMetadata("vi", "privacy-policy");
 
 export default function Page() {
   return (

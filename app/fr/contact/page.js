@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "Contactez-nous | PDF Tools",
-  description: "Une question ou besoin d’aide ? Envoyez-nous un message.",
-  alternates: {
-    canonical: "/fr/contact",
-    languages: getTrustHreflang("contact")
-  }
-};
+export const metadata = createMetadata("fr", "contact");
 
 export default function Page() {
   return (

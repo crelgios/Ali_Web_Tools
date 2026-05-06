@@ -1,15 +1,8 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
 import MergePdfTool from "../../../components/MergePdfTool";
-import { getHreflang } from "../../../lib/translations";
 
-export const metadata = {
-  title: "PDF Birleştir",
-  description: "PDF Birleştir",
-  alternates: {
-    canonical: "/tr/merge-pdf",
-    languages: getHreflang("merge-pdf")
-  }
-};
+export const metadata = createMetadata("tr", "merge-pdf");
 
 export default function Page() {
   return (

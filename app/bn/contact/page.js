@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "যোগাযোগ করুন | PDF Tools",
-  description: "কোনো প্রশ্ন আছে বা সাহায্য দরকার? আমাদের বার্তা পাঠান।",
-  alternates: {
-    canonical: "/bn/contact",
-    languages: getTrustHreflang("contact")
-  }
-};
+export const metadata = createMetadata("bn", "contact");
 
 export default function Page() {
   return (

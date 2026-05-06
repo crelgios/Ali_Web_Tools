@@ -1,9 +1,7 @@
+import { createMetadata } from "../../lib/seoConfig";
 import LocaleRedirect from "../../components/LocaleRedirect";
 
-export const metadata = {
-  title: "FAQ | PDF Tools",
-  description: "Answers to common questions about PDF Tools."
-};
+export const metadata = createMetadata("en", "faq");
 
 export default function Page() {
   return <LocaleRedirect path="faq" />;

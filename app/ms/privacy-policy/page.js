@@ -1,14 +1,7 @@
+import { createMetadata } from "../../../lib/seoConfig";
 import SiteShell from "../../../components/SiteShell";
-import { getTrustHreflang } from "../../../lib/trustTranslations";
 
-export const metadata = {
-  title: "Dasar Privasi | PDF Tools",
-  description: "Dasar Privasi",
-  alternates: {
-    canonical: "/ms/privacy-policy",
-    languages: getTrustHreflang("privacy-policy")
-  }
-};
+export const metadata = createMetadata("ms", "privacy-policy");
 
 export default function Page() {
   return (
